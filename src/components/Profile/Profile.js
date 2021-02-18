@@ -6,13 +6,17 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
     <div className={classes.profile}>
       <div className={classes.description}>
-        <img src={avatar} alt="Аватар пользователя" class={classes.avatar} />
+        <img
+          src={avatar}
+          alt="Аватар пользователя"
+          className={classes.avatar}
+        />
         <p className={classes.name}>{name}</p>
         <p className={classes.tag}>{tag}</p>
         <p className={classes.location}>{location}</p>
       </div>
 
-      <ul class={classes.stats}>
+      <ul className={classes.stats}>
         <li>
           <span className={classes.label}>Followers</span>
           <span className={classes.quantity}>{stats.followers}</span>
